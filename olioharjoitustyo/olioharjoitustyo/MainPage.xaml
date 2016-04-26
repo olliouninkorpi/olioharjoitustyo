@@ -18,11 +18,11 @@
         <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="395,449,0,0" TextWrapping="Wrap" Text="Vapaaehtoinen kuvaus:" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="668,396,0,0" TextWrapping="Wrap" Text="kilometriä" VerticalAlignment="Top" RenderTransformOrigin="0.53,0.705" SelectionChanged="textBlock_Copy3_SelectionChanged"/>
         <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" Margin="668,345,0,0" TextWrapping="Wrap" Text="minuuttia" VerticalAlignment="Top"/>
-        <Button x:Name="saveButton" Content="Tallenna" HorizontalAlignment="Left" Margin="756,597,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="saveButton" Content="Tallenna" HorizontalAlignment="Left" Margin="756,597,0,0" VerticalAlignment="Top" Click="saveButton_Click"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="395,198,0,0" TextWrapping="Wrap" Text="Lisää uusi merkintä:" VerticalAlignment="Top" Height="32" Width="213" FontSize="20" FontWeight="Bold" SelectionChanged="textBlock1_SelectionChanged"/>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="61,33,0,0" TextWrapping="Wrap" Text="Harjoituspäiväkirjasovellus" VerticalAlignment="Top" Height="67" Width="574" FontSize="48"/>
         <Button x:Name="browseButton" Content="Selaa ja hallitse merkintöjä" HorizontalAlignment="Left" Margin="61,169,0,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="virheTeksti" HorizontalAlignment="Left" Margin="395,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="42" Width="389" FontSize="20" Foreground="Red"/>
+        <TextBlock x:Name="virheTeksti" HorizontalAlignment="Left" Margin="395,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="42" Width="389" FontSize="20" Foreground="Red" x:FieldModifier="public"/>
 
     </Grid>
 </Page>

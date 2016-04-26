@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace olioharjoitustyo
 {
-    class tyyppi
+    class Merkinta
     {
         private readonly double MaxKesto = 7200;
         public string Tyyppi { get; set; }
@@ -22,10 +22,13 @@ namespace olioharjoitustyo
                 if (value <= MaxKesto) kesto = value;
                 else
                 {
-                    MainPage.virheTeksti.Text = "Virheellinen harjoituksen kesto. Syötä pienempi luku.";
+                    /*Virhe();*/
                     kesto = 0;
                 }
             }
+        }
+
         public string Kuvaus { get; set; }
+        
     }
 }

@@ -27,18 +27,14 @@ namespace olioharjoitustyo
             this.InitializeComponent();
         }
 
-        public class TextBlock
+        private void saveButton_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-        private void textBlock_Copy3_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-
+            merkinnat.Add(new Tyyppi { Tyyppi = ".", Matka = ".", Kesto = ".", Kuvaus = "." });
         }
 
-        private void textBlock1_SelectionChanged(object sender, RoutedEventArgs e)
+        /*static public void Virhe()
         {
-
-        }
+            MainPage.virheTeksti.Text = "Virheellinen harjoituksen kesto. Syota pienempi luku.";
+        }*/
     }
 }
