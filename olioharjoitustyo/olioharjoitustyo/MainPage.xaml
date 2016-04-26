@@ -9,13 +9,15 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="572,191,0,0" VerticalAlignment="Top" Width="212" Height="38"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="33" Margin="572,260,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="96"/>
-        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="33" Margin="572,320,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="96"/>
-        <TextBox x:Name="textBox_Copy1" HorizontalAlignment="Left" Height="127" Margin="572,382,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="258"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="395,191,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="395,273,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="395,333,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="395,382,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBox x:Name="kestoBox" HorizontalAlignment="Left" Height="33" Margin="572,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96"/>
+        <TextBox x:Name="matkaBox" HorizontalAlignment="Left" Height="33" Margin="572,301,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96"/>
+        <TextBox x:Name="kuvausBox" HorizontalAlignment="Left" Height="127" Margin="572,382,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="395,191,0,0" TextWrapping="Wrap" Text="Harjoituksen tyyppi:" VerticalAlignment="Top" Height="22" Width="146"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="395,244,0,0" TextWrapping="Wrap" Text="Kesto:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="395,301,0,0" TextWrapping="Wrap" Text="Matka:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="395,382,0,0" TextWrapping="Wrap" Text="Vapaaehtoinen kuvaus:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="706,301,0,0" TextWrapping="Wrap" Text="kilometriä" VerticalAlignment="Top" RenderTransformOrigin="0.53,0.705" SelectionChanged="textBlock_Copy3_SelectionChanged"/>
+        <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" Margin="706,244,0,0" TextWrapping="Wrap" Text="minuuttia" VerticalAlignment="Top"/>
 
     </Grid>
 </Page>
