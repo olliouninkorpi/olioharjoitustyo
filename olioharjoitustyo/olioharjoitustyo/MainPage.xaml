@@ -8,7 +8,16 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="572,285,0,0" VerticalAlignment="Top" Width="212" Height="38" x:FieldModifier="public"/>
+        <ComboBox x:Name="tyyppiBox" HorizontalAlignment="Left" Margin="572,285,0,0" VerticalAlignment="Top" Width="212" Height="38" x:FieldModifier="public">
+            <ComboBoxItem Content="Juoksu"/>
+            <ComboBoxItem Content="Hiihto"/>
+            <ComboBoxItem Content="Kävely"/>
+            <ComboBoxItem Content="Pyöräily"/>
+            <ComboBoxItem Content="Lihaskunto"/>
+            <ComboBoxItem Content="Jalkapallo"/>
+            <ComboBoxItem Content="Sähly"/>
+            <ComboBoxItem Content="Jääkiekko"/>
+        </ComboBox>
         <TextBox x:Name="kestoBox" HorizontalAlignment="Left" Height="33" Margin="572,332,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96" x:FieldModifier="public"/>
         <TextBox x:Name="matkaBox" HorizontalAlignment="Left" Height="33" Margin="572,383,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96" x:FieldModifier="public"/>
         <TextBox x:Name="kuvausBox" HorizontalAlignment="Left" Height="127" Margin="572,449,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258" x:FieldModifier="public"/>
@@ -23,7 +32,7 @@
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="61,33,0,0" TextWrapping="Wrap" Text="Harjoituspäiväkirjasovellus" VerticalAlignment="Top" Height="67" Width="574" FontSize="48"/>
         <Button x:Name="browseButton" Content="Selaa ja hallitse merkintöjä" HorizontalAlignment="Left" Margin="61,169,0,0" VerticalAlignment="Top"/>
         <TextBlock x:Name="virheTeksti" HorizontalAlignment="Left" Margin="395,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="42" Width="389" FontSize="20" Foreground="Red" x:FieldModifier="public"/>
-        <DatePicker HorizontalAlignment="Left" Margin="572,232,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="paivamaara" HorizontalAlignment="Left" Margin="572,232,0,0" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock_Copy5" HorizontalAlignment="Left" Margin="395,232,0,0" TextWrapping="Wrap" Text="Päivämäärä:" VerticalAlignment="Top" Height="22" Width="146"/>
 
     </Grid>

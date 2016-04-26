@@ -31,8 +31,9 @@ namespace olioharjoitustyo
         {
             merkinnat.Add(new Merkinta
             {
-                Tyyppi = MainPage,
+                Tyyppi = Convert.ToString(tyyppiBox.SelectedValue),
                 Matka = Convert.ToDouble(matkaBox.Text),
+                Paiva = Convert.ToDateTime(paivamaara.Date),
                 Kesto = Convert.ToDouble(kestoBox.Text),
                 Kuvaus = kuvausBox.Text,
             });
