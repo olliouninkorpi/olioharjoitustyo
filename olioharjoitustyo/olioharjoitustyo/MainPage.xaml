@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="olioharjoitustyo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:olioharjoitustyo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="572,191,0,0" VerticalAlignment="Top" Width="212" Height="38"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="33" Margin="572,260,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="96"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="33" Margin="572,320,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="96"/>
+        <TextBox x:Name="textBox_Copy1" HorizontalAlignment="Left" Height="127" Margin="572,382,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="258"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="395,191,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="395,273,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="395,333,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="395,382,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
