@@ -31,5 +31,10 @@ namespace olioharjoitustyo
         {
 
         }
+
+        private void textBlock1_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
