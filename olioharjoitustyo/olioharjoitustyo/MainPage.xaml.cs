@@ -27,6 +27,10 @@ namespace olioharjoitustyo
             this.InitializeComponent();
         }
 
+        public class TextBlock
+        {
+
+        }
         private void textBlock_Copy3_SelectionChanged(object sender, RoutedEventArgs e)
         {
 

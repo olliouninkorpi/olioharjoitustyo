@@ -22,7 +22,7 @@ namespace olioharjoitustyo
                 if (value <= MaxKesto) kesto = value;
                 else
                 {
-                    Console.WriteLine("Virheellinen kesto. Syötä pienempi luku.");
+                    MainPage.virheTeksti.Text = "Virheellinen harjoituksen kesto. Syötä pienempi luku.";
                     kesto = 0;
                 }
             }
