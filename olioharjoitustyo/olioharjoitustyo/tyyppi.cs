@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace olioharjoitustyo
 {
-    class Merkinta
+    public class Merkinta
     {
         private readonly double MaxKesto = 7200;
         public string Tyyppi { get; set; }
         public double Matka { get; set; }
+        public DateTime Paiva { get; set; }
         private double kesto;
         public double Kesto {
                 get

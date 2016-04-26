@@ -26,10 +26,10 @@ namespace olioharjoitustyo
         {
             this.InitializeComponent();
         }
-
+        List<Merkinta> merkinnat = new List<Merkinta>();
         private void saveButton_Click(object sender, RoutedEventArgs e)
         {
-            merkinnat.Add(new Tyyppi { Tyyppi = ".", Matka = ".", Kesto = ".", Kuvaus = "." });
+            merkinnat.add(new Merkinta { Tyyppi = ".", Matka = 2, Kesto = 2, Kuvaus = "." });
         }
 
         /*static public void Virhe()

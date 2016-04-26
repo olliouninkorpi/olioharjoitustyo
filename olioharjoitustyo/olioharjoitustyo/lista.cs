@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace olioharjoitustyo
+/*namespace olioharjoitustyo
 {
     public class Lista
     {
-        List<Merkinta> merkinnat = new List<Merkinta>(); 
+        public List<Merkinta> merkinnat = new List<Merkinta>(); 
     }
-}
+}*/
