@@ -8,10 +8,10 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="572,285,0,0" VerticalAlignment="Top" Width="212" Height="38"/>
-        <TextBox x:Name="kestoBox" HorizontalAlignment="Left" Height="33" Margin="572,332,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96"/>
-        <TextBox x:Name="matkaBox" HorizontalAlignment="Left" Height="33" Margin="572,383,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96"/>
-        <TextBox x:Name="kuvausBox" HorizontalAlignment="Left" Height="127" Margin="572,449,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="572,285,0,0" VerticalAlignment="Top" Width="212" Height="38" x:FieldModifier="public"/>
+        <TextBox x:Name="kestoBox" HorizontalAlignment="Left" Height="33" Margin="572,332,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96" x:FieldModifier="public"/>
+        <TextBox x:Name="matkaBox" HorizontalAlignment="Left" Height="33" Margin="572,383,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96" x:FieldModifier="public"/>
+        <TextBox x:Name="kuvausBox" HorizontalAlignment="Left" Height="127" Margin="572,449,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="258" x:FieldModifier="public"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="395,285,0,0" TextWrapping="Wrap" Text="Harjoituksen tyyppi:" VerticalAlignment="Top" Height="22" Width="146"/>
         <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="395,332,0,0" TextWrapping="Wrap" Text="Kesto:" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="395,383,0,0" TextWrapping="Wrap" Text="Matka:" VerticalAlignment="Top"/>

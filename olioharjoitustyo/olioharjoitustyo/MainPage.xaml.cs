@@ -25,11 +25,17 @@ namespace olioharjoitustyo
         public MainPage()
         {
             this.InitializeComponent();
-        }
-        List<Merkinta> merkinnat = new List<Merkinta>();
-        private void saveButton_Click(object sender, RoutedEventArgs e)
+         }
+        public List<Merkinta> merkinnat = new List<Merkinta>();
+        public void saveButton_Click(object sender, RoutedEventArgs e)
         {
-            merkinnat.add(new Merkinta { Tyyppi = ".", Matka = 2, Kesto = 2, Kuvaus = "." });
+            merkinnat.Add(new Merkinta
+            {
+                Tyyppi = MainPage,
+                Matka = Convert.ToDouble(matkaBox.Text),
+                Kesto = Convert.ToDouble(kestoBox.Text),
+                Kuvaus = kuvausBox.Text,
+            });
         }
 
         /*static public void Virhe()
