@@ -40,26 +40,32 @@ namespace olioharjoitustyo
                   Kesto = Convert.ToDouble(kestoBox.Text),
                   Kuvaus = kuvausBox.Text
               });
-            string p = "C:\\Users\\Issev\\Test\\filesers.txt";
+            await Task.Run(() => {
+            string p = "harjoitukset.txt";
             string paivakirja = string.Join(",", merkinnat);
-            using (FileStream fs = new FileStream(p, FileMode.Append))
-            using (StreamWriter sw = new StreamWriter(fs))
-                await Task.Run(() =>
-                sw.WriteLineAsync(paivakirja));
+                using (FileStream fs = new FileStream(p, FileMode.Append))
+                using (StreamWriter sw = new StreamWriter(fs))
+                    sw.WriteLineAsync(paivakirja);
+                    });
 
 
         }
 
-        private void browseButton_Click(object sender, RoutedEventArgs e)
+        private async void browseButton_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(selaa));
+            await Task.Run(() =>
+            {
+                Task.Yield();
+                this.Frame.Navigate(typeof(selaa));
+            });
         }
     }
 }
 
-        /*static public void Virhe()
-        {
-            MainPage.virheTeksti.Text = "Virheellinen harjoituksen kesto. Syota pienempi luku.";
-        }*/
-    
+
+/*static public void Virhe()
+{
+    MainPage.virheTeksti.Text = "Virheellinen harjoituksen kesto. Syota pienempi luku.";
+}*/
+
 

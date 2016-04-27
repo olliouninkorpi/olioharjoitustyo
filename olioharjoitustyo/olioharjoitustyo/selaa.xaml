@@ -9,7 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="61,33,0,0" TextWrapping="Wrap" Text="Harjoituspäiväkirjasovellus" VerticalAlignment="Top" Height="67" Width="574" FontSize="48"/>
-        <Button x:Name="createButton" Content="Tee uusi merkintä" RenderTransformOrigin="0.5,0.5" Margin="69,189,0,493" Height="38" Width="219"/>
+        <Button x:Name="createButton" Content="Tee uusi merkintä" RenderTransformOrigin="0.5,0.5" Margin="69,189,0,493" Height="38" Width="219" Click="createButton_Click"/>
         <ListView x:Name="merkinnat" HorizontalAlignment="Left" Height="386" Margin="367,167,0,0" VerticalAlignment="Top" Width="556"/>
 
 
