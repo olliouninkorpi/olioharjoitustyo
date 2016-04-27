@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -23,33 +24,42 @@ namespace olioharjoitustyo
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        String sijainti = "C:\\Users\\Issev\\Documents\\harjoitust.txt";
         public MainPage()
         {
             this.InitializeComponent();
          }
         public List<Merkinta> merkinnat = new List<Merkinta>();
-        public void saveButton_Click(object sender, RoutedEventArgs e)
+            
+        public async void saveButton_Click(object sender, RoutedEventArgs e)
         {
-            merkinnat.Add(new Merkinta
-            {
-                Tyyppi = Convert.ToString(tyyppiBox.SelectedValue),
-                Matka = Convert.ToDouble(matkaBox.Text),
-                Paiva = Convert.ToDateTime(paivamaara.Date),
-                Kesto = Convert.ToDouble(kestoBox.Text),
-                Kuvaus = kuvausBox.Text
-            });
+              merkinnat.Add(new Merkinta
+              {
+                  Tyyppi = Convert.ToString(tyyppiBox.SelectedValue),
+                  Matka = Convert.ToDouble(matkaBox.Text),
+                  Paiva = Convert.ToString(paivamaara.Date),
+                  Kesto = Convert.ToDouble(kestoBox.Text),
+                  Kuvaus = kuvausBox.Text
+              });
+            string p = "C:\\Users\\Issev\\Test\\filesers.txt";
             string paivakirja = string.Join(",", merkinnat);
-            File.WriteAllText(@"C:\Users\Issev\TestFolder\WriteLines.txt", paivakirja);
-
+            using (FileStream fs = new FileStream(p, FileMode.Append))
+            using (StreamWriter sw = new StreamWriter(fs))
+                await Task.Run(() =>
+                sw.WriteLineAsync(paivakirja));
 
 
         }
+
+        private void browseButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(selaa));
         }
+    }
+}
 
         /*static public void Virhe()
         {
             MainPage.virheTeksti.Text = "Virheellinen harjoituksen kesto. Syota pienempi luku.";
         }*/
-    }
+    
 

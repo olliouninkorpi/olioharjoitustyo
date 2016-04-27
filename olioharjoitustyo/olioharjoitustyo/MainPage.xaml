@@ -25,15 +25,19 @@
         <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="395,332,0,0" TextWrapping="Wrap" Text="Kesto:" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="395,383,0,0" TextWrapping="Wrap" Text="Matka:" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="395,449,0,0" TextWrapping="Wrap" Text="Vapaaehtoinen kuvaus:" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="673,396,0,0" TextWrapping="Wrap" Text="kilometriä" VerticalAlignment="Top" RenderTransformOrigin="0.53,0.705" SelectionChanged="textBlock_Copy3_SelectionChanged"/>
+        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="673,396,0,0" TextWrapping="Wrap" Text="kilometriä" VerticalAlignment="Top" RenderTransformOrigin="0.53,0.705"/>
         <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" Margin="673,345,0,0" TextWrapping="Wrap" Text="minuuttia" VerticalAlignment="Top"/>
         <Button x:Name="saveButton" Content="Tallenna" HorizontalAlignment="Left" Margin="756,597,0,0" VerticalAlignment="Top" Click="saveButton_Click"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="395,179,0,0" TextWrapping="Wrap" Text="Lisää uusi merkintä:" VerticalAlignment="Top" Height="32" Width="213" FontSize="20" FontWeight="Bold" SelectionChanged="textBlock1_SelectionChanged"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="395,179,0,0" TextWrapping="Wrap" Text="Lisää uusi merkintä:" VerticalAlignment="Top" Height="32" Width="213" FontSize="20" FontWeight="Bold"/>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="61,33,0,0" TextWrapping="Wrap" Text="Harjoituspäiväkirjasovellus" VerticalAlignment="Top" Height="67" Width="574" FontSize="48"/>
-        <Button x:Name="browseButton" Content="Selaa ja hallitse merkintöjä" HorizontalAlignment="Left" Margin="61,169,0,0" VerticalAlignment="Top"/>
         <TextBlock x:Name="virheTeksti" HorizontalAlignment="Left" Margin="395,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="42" Width="389" FontSize="20" Foreground="Red" x:FieldModifier="public"/>
         <DatePicker x:Name="paivamaara" HorizontalAlignment="Left" Margin="572,232,0,0" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock_Copy5" HorizontalAlignment="Left" Margin="395,232,0,0" TextWrapping="Wrap" Text="Päivämäärä:" VerticalAlignment="Top" Height="22" Width="146"/>
+        <Button x:Name="browseButton" Content="Selaa ja hallitse merkintojä" RenderTransformOrigin="0.5,0.5" Margin="69.47,189.388,0,498.66" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="browseButton_Click">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="0.528"/>
+            </Button.RenderTransform>
+        </Button>
 
     </Grid>
 </Page>
