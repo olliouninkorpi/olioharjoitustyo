@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,6 +23,7 @@ namespace olioharjoitustyo
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        String sijainti = "C:\\Users\\Issev\\Documents\\harjoitust.txt";
         public MainPage()
         {
             this.InitializeComponent();
@@ -35,8 +37,14 @@ namespace olioharjoitustyo
                 Matka = Convert.ToDouble(matkaBox.Text),
                 Paiva = Convert.ToDateTime(paivamaara.Date),
                 Kesto = Convert.ToDouble(kestoBox.Text),
-                Kuvaus = kuvausBox.Text,
+                Kuvaus = kuvausBox.Text
             });
+            string paivakirja = string.Join(",", merkinnat);
+            File.WriteAllText(@"C:\Users\Issev\TestFolder\WriteLines.txt", paivakirja);
+
+
+
+        }
         }
 
         /*static public void Virhe()
@@ -44,4 +52,4 @@ namespace olioharjoitustyo
             MainPage.virheTeksti.Text = "Virheellinen harjoituksen kesto. Syota pienempi luku.";
         }*/
     }
-}
+
