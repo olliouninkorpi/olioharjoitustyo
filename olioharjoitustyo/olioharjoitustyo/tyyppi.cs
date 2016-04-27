@@ -8,13 +8,13 @@ namespace olioharjoitustyo
 {
     public class Merkinta
     {
-        private readonly double MaxKesto = 7200;
+        private readonly /*double*/ string MaxKesto = "7200";
         public string Tyyppi { get; set; }
-        public double Matka { get; set; }
+        public /*double*/ string Matka { get; set; }
         public string Paiva { get; set; }
-        private double kesto;
-        public double Kesto {
-                get
+        private /*double*/ string kesto;
+        public /*double*/ string Kesto { get; set; } /*
+        get
             {
                 return kesto;
             }
@@ -23,11 +23,10 @@ namespace olioharjoitustyo
                 if (value <= MaxKesto) kesto = value;
                 else
                 {
-                    /*Virhe();*/
+                    Virhe();
                     kesto = 0;
-                }
-            }
-        }
+                } 
+            }*/
 
         public string Kuvaus { get; set; }
         

@@ -24,9 +24,10 @@ namespace olioharjoitustyo
     {
         public selaa()
         {
+            string selaus = System.IO.File.ReadAllText(@"harjoitukset.txt");
             this.InitializeComponent();
+            merkintaBlock.Text = selaus;
         }
-
         private void createButton_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage));

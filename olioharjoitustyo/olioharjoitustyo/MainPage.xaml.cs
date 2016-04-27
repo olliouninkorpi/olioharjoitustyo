@@ -35,32 +35,27 @@ namespace olioharjoitustyo
               merkinnat.Add(new Merkinta
               {
                   Tyyppi = Convert.ToString(tyyppiBox.SelectedValue),
-                  Matka = Convert.ToDouble(matkaBox.Text),
+                  Matka = Convert.ToString(matkaBox.Text),
                   Paiva = Convert.ToString(paivamaara.Date),
-                  Kesto = Convert.ToDouble(kestoBox.Text),
+                  Kesto = Convert.ToString(kestoBox.Text),
                   Kuvaus = kuvausBox.Text
               });
             await Task.Run(() => {
-            string p = "harjoitukset.txt";
-            string paivakirja = string.Join(",", merkinnat);
-                using (FileStream fs = new FileStream(p, FileMode.Append))
-                using (StreamWriter sw = new StreamWriter(fs))
-                    sw.WriteLineAsync(paivakirja);
-                    });
-
-
-        }
-
-        private async void browseButton_Click(object sender, RoutedEventArgs e)
-        {
-            await Task.Run(() =>
-            {
-                Task.Yield();
-                this.Frame.Navigate(typeof(selaa));
+                string merkkina = merkinnat.ToString();
+            File.WriteAllText("harjoitukset.txt", merkkina);
             });
+
+            }
+
+        private void browseButton_Click(object sender, RoutedEventArgs e)
+        {
+ 
+            
+                Frame.Navigate(typeof(selaa));
+            }
         }
     }
-}
+
 
 
 /*static public void Virhe()
